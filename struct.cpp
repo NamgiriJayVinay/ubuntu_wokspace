@@ -20,5 +20,4 @@ int main()
   cout<<"Peson name: "<<p1.name<<endl;
   cout<<"Peson age: "<<p1.age<<endl;
   cout<<"Peson salary: "<<p1.salary<<endl;
-
-}
+} 
