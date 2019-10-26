@@ -11,5 +11,14 @@ int main()
   int *p;
   p=&j;
   cout<<p<<endl;//p is just an address without *
+
+  //-------------below is new way------------------//
+  cout<<"-------------below is new way------------------"<<endl;
+  int *pointer;
+  pointer=new int;
+  *pointer=24;
+  cout<<pointer<<endl;//address
+  cout<<*pointer<<endl;//value
+  delete pointer;//removes allocated memory
   return 0;
 }
