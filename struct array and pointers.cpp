@@ -10,9 +10,11 @@ struct student{
 
 int main()
 {
-  student s[4];
- // int n=4;
-  for(int i=0;i<4;i++)
+  int n;
+  cout<<"Enter number of students:  "<<endl;
+  cin>>n;
+  student s[n];
+  for(int i=0;i<n;i++)
   {
       cout<<"Enter detailes of person"<<i+1<<endl;
       cin>>s[i].roll;
@@ -20,7 +22,7 @@ int main()
       cin>>s[i].percent;
   }
 
-  for(int i=0;i<4;i++)
+  for(int i=0;i<n;i++)
   {
       cout<<"\n------Detailes of person: "<<i+1<<"--------"<<endl;
       cout<<"\nRoll number:"<<s[i].roll;
