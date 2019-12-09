@@ -1,0 +1,47 @@
+#include<iostream>
+using namespace std;
+
+class animal
+{
+public:
+    virtual void eat()
+    {
+        cout<<"I am eating generic food"<<endl;
+    }
+};
+
+class cat:public animal
+{
+public:
+    void eat()
+    {
+        cout<<"Cat eating cat food"<<endl;
+    }
+};
+
+class dog:public animal
+{
+public:
+    void eat()
+    {
+        cout<<"dog eating dog food"<<endl;
+    }
+};
+
+void function1( animal *abc)
+{
+    abc->eat( );
+}
+
+int main()
+{
+    animal *ptr;
+
+    cat catobj;
+    ptr = &catobj;
+    function1(ptr);
+
+    dog dogobj;
+    ptr = &dogobj;
+    function1(ptr);
+}
